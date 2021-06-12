@@ -1,0 +1,32 @@
+<!--
+    같은 클래스 이름 중 특정 위치 태그를 선택하는 방법 입니다.
+    위에서 아래로 1부터 시작합니다.
+    
+    선택자:nth-child(숫자){
+        CSS 속성 : 값
+    }
+-->
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>선택자를 클래스명으로 사용하기</title>
+        <style>
+            .myMenu{
+                color:skyblue;
+            }
+            .myMenu:nth-child(2){
+                color:hotpink;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li class="myMenu">HTML5</li>
+            <li class="myMenu">CSS3</li>
+            <li class="myMenu">jQuery</li>
+            <li class="myMenu">MySQL</li>
+            <li class="myMenu">PHP</li>
+        </ul>
+    </body>
+</html>

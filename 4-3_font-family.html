@@ -1,0 +1,32 @@
+<!--
+    텍스트의 폰트를 적용할 때 사용하는 CSS속성은 font-family입니다. 폰트는 여러 개를 적용할 수
+    있으며, 사용자의 컴퓨터에 없는 폰트일 경우에는 명시된 다음 폰트를 적용하는 방식입니다.
+    
+    사용 방법
+    선택자 {
+        font-family:1순위 폰트,2순위 폰트, 3순위 폰트;
+    }
+-->
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>폰트 변경 하기</title>
+        <style>
+            .font1{
+                font-family: verdana,sans-serif,georgia;
+            }
+            .font2{
+                font-family: sans-serif,Verdana,Georgia;
+            }
+            .font3{
+                font-family: Georgia,verdana,sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="font1">Hello world</p>
+        <p class="font2">Hello world</p>
+        <p class="font3">Hello world</p>
+    </body>
+</html>

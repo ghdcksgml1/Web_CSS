@@ -1,0 +1,41 @@
+<!--
+    폰트의 스타일을 지정합니다.
+    normal: 기본
+    oblique : 기울임
+    italic : 이탤릭
+    inherit : 부모 엘리먼트의 font-style값
+
+    사용방법
+    선택자 {
+        font-style:font-style 속성값;
+    }
+-->
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>폰트에 스타일 주기</title>
+        <style>
+            .parent{
+                font-style:normal;
+            }
+            .child1{
+                font-style:oblique;
+            }
+            .child2{
+                font-style:italic;
+            }
+            .child3{
+                font-style:inherit;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            I am Parent
+            <p class="child1">I am child 1</p>
+            <p class="child2">I am child 2</p>
+            <p class="child3">I am child 3</p>
+        </div>
+    </body>
+</html>
