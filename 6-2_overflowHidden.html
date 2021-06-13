@@ -1,0 +1,29 @@
+<!--
+    텍스트가 영역을 벗어날 때
+
+    - visble : 넘어간 영역 보이기
+    - hidden : 넘어간 영역 숨기기
+    - scroll : 스크롤 적용
+-->
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>영역을 넘어선 텍스트 처리하기</title>
+        <style>
+            .hidden{
+                width:180px;
+                height:60px;
+                background:skyblue;
+                overflow:hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="hidden">
+            안녕하세요.<br/>
+            이 영역은 overflow를 테스트 하기 위한 영역입니다.<br/>
+            사용된 값은 hidden입니다.<br/>
+        </div>
+    </body>
+</html>
