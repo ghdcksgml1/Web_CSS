@@ -1,0 +1,19 @@
+<!--
+    position값을 relative로 하면 자신의 위치를 기준으로 이동하게 됩니다.
+    현재 위치에서 오른쪽으로 1px, 2px씩 움직이게 하고 싶을 때 유용합니다.
+-->
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>HTML엘리먼트를 이동시키기</title>
+        <style>
+            .child:nth-child(1){width:240px;height:100px;background:skyblue;position:static;}
+            .child:nth-child(2){width:240px;height:100px;background:hotpink;position:relative;left:50px;top:10px}
+        </style>
+    </head>
+    <body>
+        <div class="child">position의 값을 relative로 적용하지 않은 박스</div>
+        <div class="child">position의 값을 relative로 적용한 박스</div>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!--
+    HTML 엘리먼트의 위치 변경하기
+    CSS 속성은 position입니다.
+    
+    - static : 기본값
+    - absolute : 부모 엘리먼트에 position 속성값  absolute, fixed, relative가 적용되어
+    있으면 부모 엘리먼트 안에서 원하는 위치로 이동하고, 적용되지 않으면 position 속성값
+    absolute, fixed, relative가 적용된 좀 더 상위의 부모 엘리먼트 안에서 원하는 위치로
+    이동합니다. 최종적으로 없을 경우 body 안에 위치합니다.
+    - fixed : 웹브라우저 화면에 고정(스크롤을 해도 해당 위치에 고정)
+    - relative : 자신의 위치를 기준으로 이동  
+    
+    static은 position 속성의 기본값이며 top,left,right,bottom 속성을 적용하더라도
+    어떠한 효과도 주지 않습니다.
+-->
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>HTML엘리먼트를 이동시키기</title>
+        <style>
+            .static{
+                position:static;
+                width:100px;
+                height:100px;
+            }
+            .static:nth-child(1){background:skyblue}
+            .static:nth-child(2){background:hotpink;left:100px}
+            .static:nth-child(3){background:yellow}
+        </style>
+    </head>
+    <body>
+        <div class="static">position의 값을 static으로 적용한 박스 1</div>
+        <div class="static">position의 값을 static으로 적용한 박스 2 left:100px 적용</div>
+        <div class="static">position의 값을 static으로 적용한 박스 3</div>
+    </body>
+</html>

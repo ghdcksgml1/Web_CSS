@@ -1,0 +1,30 @@
+#parent{
+    width:500px;
+    height:200px;
+    background:skyblue;
+    position:static;
+}
+.child{
+    width:240px;
+}
+.child:nth-child(1){
+    height:200px;
+    background:greenyellow;
+    position:absolute;
+    top:0px;
+    left:0;
+}
+.child:nth-child(2){
+    height:100px;
+    background:hotpink;
+    position:absolute;
+    top:0px;
+    left:250px;
+}
+.child:nth-child(3){
+    height:100px;
+    background:yellow;
+    position:absolute;
+    top:100px;
+    left:250px;
+}

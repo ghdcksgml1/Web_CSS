@@ -1,0 +1,45 @@
+<!--
+    HTML 엘리먼트의 위치 변경하기
+    CSS 속성은 position입니다.
+    
+    - static : 기본값
+    - absolute : 부모 엘리먼트에 position 속성값  absolute, fixed, relative가 적용되어
+        있으면 부모 엘리먼트 안에서 원하는 위치로 이동하고, 적용되지 않으면 position 속성값
+        absolute, fixed, relative가 적용된 좀 더 상위의 부모 엘리먼트 안에서 원하는 위치로
+        이동합니다. 최종적으로 없을 경우 body 안에 위치합니다.
+    - fixed : 웹브라우저 화면에 고정(스크롤을 해도 해당 위치에 고정)
+    - relative : 자신의 위치를 기준으로 이동
+
+    특정한 부모 엘리먼트 안에서 자식 엘리먼트들을 이동해 보겠습니다. 자식 엘리먼트들이 부
+    모 엘리먼트를 기준으로 이동하려면 부모 엘리먼트는 position 속성값으로 relative,fixed,
+    absolute를 갖고 있어야 합니다. 그렇지 않으면 자식 엘리먼트들이 부모 엘리먼트를 기준으
+    로 위치하지 않고, 상위의 해당 값을 갖는 엘리먼트를 찾아 그 엘리먼트를 기준으로 위치합
+    니다.
+-->
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>HTML엘리먼트를 이동시키기</title>
+        <style>
+            #parent{
+                width:500px;
+                height:200px;
+                background:skyblue;
+                position:relative;
+            }
+            .child{width:240px;}
+            .child:nth-child(1){height:180px;background:greenyellow;position:absolute;top:20px;left:0px;}
+            .child:nth-child(2){height:90px;background:hotpink;position:absolute;top:20px;left:250px;}
+            .child:nth-child(3){height:90px;background:yellow;position:absolute;top:110px;left:250px;}
+        </style>
+    </head>
+    <body>
+        <div id="parent">
+            부모 박스
+            <div class="child">자식 박스 1</div>
+            <div class="child">자식 박스 2</div>
+            <div class="child">자식 박스 3</div>
+        </div>
+    </body>
+</html>
