@@ -1,0 +1,33 @@
+<!--
+    position의 값으로 fixed를 사용하면 스크롤하여 페이지의 어디에 위치하든
+    관계없이 해당 엘리먼트가 화면 위치에 고정됩니다.
+-->
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>HTML엘리먼트를 이동시키기</title>
+        <style>
+            div{
+                width:200px;
+                height:100px;
+            }
+            .fixed{
+                background:skyblue;
+                position:fixed;     
+                top:10px;
+                left:10px;
+            }
+            .relative{
+                background:hotpink;
+                position:relative;
+                top:140px;
+                left:50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="fixed">position의 값을 fixed로 적용한 박스</div>
+        <div class="relative">position의 값을 relative로 적용한 박스</div>
+    </body>
+</html>

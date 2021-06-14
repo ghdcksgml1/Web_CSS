@@ -1,0 +1,32 @@
+<!--
+    남는 영역이 있다면 그림이 잘려서 반복되게 됩니다.
+
+    배경 이미지의 반복을 없애려면 background-repeat 속성에
+    no-repeat라는 값을 사용합니다.
+    만약, 가로로만 배경 이미지를 반복하려면 repeat-x를 추가하고,
+    세로로만 배경 이미지를 반복하려면 repeat-y를 추가합니다.
+
+    - 100px : 배경 이미지의 사이즈가 가로 100px 세로 100px
+    - 150px 100px : 배경 이미지의 사이즈가 가로 150px, 세로 100px
+    - contain : 배경 이미지가 잘리는 부분 없이 모두 표시
+    - cover : 배경 이미지가 잘리는 부분이 있더라도 꽉 차게 표시
+-->
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>배경꾸미기</title>
+        <style>
+            .background{
+                width:500px;
+                height:500px;
+                background-image:url('http://mybook.everdevel.com/images/pablo.jpg');
+                background-size:150px 100px;
+                background-repeat: no-repeat;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="background"></div>
+    </body>
+</html>
