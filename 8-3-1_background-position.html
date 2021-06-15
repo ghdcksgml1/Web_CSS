@@ -1,0 +1,44 @@
+<!--
+    배경 이미지 위치 조정하기
+
+    배경 이미지의 위치를 조정하기 위해 사용하는 CSS 속성은 background-pposition 입니다.
+
+    사용방법
+    선택자 {
+        background-position:가로위치 세로위치;
+    }
+
+    background-position 속성에서 사용되는 값은 다음과 같습니다.
+    가로위치 {
+        left (영역의 왼쪽에 위치)
+        center (영역의 가운데에 위치)
+        right (영역의 오른쪽에 위치)
+        % (퍼센트 수만큼 가로 위치를 지정)
+        px (원래의 위치가 0px이 되어 음수이면 왼쪽, 양수이면 오른쪽으로 이동)
+    }
+    세로위치 {
+        top (영역의 위쪽에 위치)
+        center (영역의 가운데에 위치)
+        bottom (영역의 아래쪽에 위치)
+        % (퍼센트 수만큼 세로 위치를 지정)
+        px (원래의 위치가 0px이 되어 음수이면 위쪽, 양수이면 아래쪽으로 이동)
+    }
+-->
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>배경꾸미기</title>
+        <style>
+            .picture{
+                width:100%;height:400px;
+                background-image: url('http://mybook.everdevel.com/images/cat.png');
+                background-repeat:no-repeat;
+                background-position: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="picture"></div>
+    </body>
+</html>
