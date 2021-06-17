@@ -1,0 +1,50 @@
+<!--
+    border 종류
+    - solid
+    - dotted
+    - dashed
+    - double
+    - groove
+    - ridge
+    - inset
+    - outset
+
+    사용방법
+    선택자 {
+        border:외곽선굵기 외곽선스타일 외곽선색;
+    }
+-->
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>박스에 외곽선 긋기</title>
+        <style>
+            div{
+                width:200px;height:20px;
+                margin-top:5px;
+                text-align:center;
+                display:inline-block;
+            }
+            .solid{border:1px solid #000}
+            .dotted{border:1px dotted #000}
+            .dashed{border:1px dashed #000}
+            .double{border:1px double #000}
+            .groove{border:1px groove #000}
+            .ridge{border:1px ridge #ccc}
+            .inset{border:1px inset #ccc}
+            .outset{border:1px outset #ccc}
+        </style>
+    </head>
+    <body>
+        <div class="solid">solid</div>
+        <div class="dotted">dotted</div>
+        <div class="dashed">dashed</div>
+        <div class="double">double</div>
+        <div class="groove">groove</div>
+        <div class="ridge">ridge</div>
+        <div class="inset">inset</div>
+        <div class="outset">outset</div>
+
+    </body>
+</html>

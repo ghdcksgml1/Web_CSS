@@ -1,0 +1,31 @@
+<!--
+    float는 HTML 엘리먼트의 흐름을 제어합니다. 값은 기본값인
+    none과 left, right가 있습니다. left를 값으로 적용하면
+    해당 엘리먼트가 왼쪽에 위치하고, right를 적용하면 오른쪽에
+    위치합니다.
+-->
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>float에 대해서 알아보기</title>
+        <style>
+            div{
+                width:200px;line-height:200px;
+                text-align:center;
+            }
+            .left{
+                background-color:skyblue;
+                float : left;
+            }
+            .right{
+                background-color: hotpink;
+                float : right;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="left">float left가 적용된 박스</div>
+        <div class="right">float right가 적용된 박스</div>
+    </body>
+</html>

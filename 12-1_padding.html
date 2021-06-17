@@ -1,0 +1,25 @@
+<!--
+    박스의 안쪽 여백을 설정하기 위해 사용하는 속성은
+    padding입니다.
+    - 선택자{padding:20px} : 모든 방향 20px 적용
+    - 선택자{padding:20px 30px} : 위아래 20px, 양 옆 30px 적용
+    - 선택자{padding:20px 30px 10px} : 위아래 20px, 양 옆 30px 적용, 아래 10px 적용
+    - 선택자{padding:20px 10px 50px 20px} : 위 20px, 오른쪽 10px, 아래 50px, 왼쪽 20px 적용
+-->
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>박스의 안에서 여백 지정</title>
+    </head>
+    <style>
+        div{
+            width:100px;height:100px;
+            background-color: skyblue;
+            padding:60px;
+        }
+    </style>
+    <body>
+        <div>padding이 적용된 박스</div>
+    </body>
+</html>

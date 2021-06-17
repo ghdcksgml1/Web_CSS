@@ -1,0 +1,28 @@
+<!--
+    원하는 부분에만 외곽선을 적용할 수 있습니다.
+    border-top,border-right,border-left,border-bottom
+-->
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>박스에 외곽선 긋기</title>
+        <style>
+            div{
+                width:200px;height:30px;margin:5px;
+                background-color:skyblue;
+                text-align:center;
+            }
+            .top{border-top: 3px solid;}
+            .right{border-right: 3px solid;}
+            .bottom{border-bottom: 3px solid;}
+            .left{border-left: 3px solid;}
+        </style>
+    </head>
+    <body>
+        <div class="top">border-top</div>
+        <div class="right">border-right</div>
+        <div class="bottom">border-bottom</div>
+        <div class="left">border-left</div>
+    </body>
+</html>
